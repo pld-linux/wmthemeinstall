@@ -19,6 +19,7 @@ Requires:	WindowMaker
 BuildRoot:   	/tmp/%{name}-%{version}-root
 
 %define 	_prefix 	/usr/X11R6
+%define		_applnkdir	%{_datadir}/applnk
 
 %description
 Window Maker Theme Install is a quick little WindowMaker theme
@@ -40,10 +41,10 @@ make
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_datadir}/applnk/Utilities
+install -d $RPM_BUILD_ROOT%{_applnkdir}/Utilities
 
 make install-strip DESTDIR=$RPM_BUILD_ROOT
-install %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/applnk/Utilities
+install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Utilities
 
 gzip -9nf README ChangeLog AUTHORS NEWS
 
@@ -54,4 +55,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc {README,ChangeLog,AUTHORS,NEWS}.gz
 %attr(755,root,root) %{_bindir}/wmthemeinstall
-%{_datadir}/applnk/Utilities/wmthemeinstall.desktop
+%{_applnkdir}/Utilities/wmthemeinstall.desktop
