@@ -1,6 +1,6 @@
---- options.c~	Sun Sep 12 23:00:29 1999
-+++ options.c	Mon Sep 13 10:56:30 1999
-@@ -163,8 +163,8 @@
+--- wmOptions.c~	Wed Sep 22 08:38:26 1999
++++ wmOptions.c	Tue Sep 28 11:17:20 1999
+@@ -137,8 +137,8 @@
  	
  	if (stat("/usr/local/share/WindowMaker/",&pathStat)==0) {
  		strcpy(path,"/usr/local/share/WindowMaker/");
