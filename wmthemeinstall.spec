@@ -11,9 +11,7 @@ Source0:	http://hellblazer.dhis.org/projects/download/%{name}-%{version}.tar.gz
 Source1:	wmthemeinstall.desktop
 Patch:		wmthemeinstall-options.patch
 URL:		http://hellblazer.dhis.org/projects/
-BuildRequires:	XFree86-devel
 BuildRequires:	gtk+-devel
-BuildRequires:	glib-devel
 BuildRequires:	zlib-devel
 Requires:	WindowMaker
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
