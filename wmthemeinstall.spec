@@ -34,7 +34,7 @@ zarówno dla ca³ego systemu jak i dla pojedyñczego u¿ytkownika.
 
 %build
 rm -f missing
-aclocal
+%{__aclocal}
 %{__autoconf}
 %{__automake}
 %configure
