@@ -10,9 +10,9 @@ Source0:	http://hellblazer.dhis.org/projects/download/%{name}-%{version}.tar.gz
 Source1:	wmthemeinstall.desktop
 Patch:		wmthemeinstall-options.patch
 URL:		http://hellblazer.dhis.org/projects/
-BuildPrereq:	XFree86-devel
-BuildPrereq:	gtk+-devel
-BuildPrereq:	glib-devel
+BuildRequires:	XFree86-devel
+BuildRequires:	gtk+-devel
+BuildRequires:	glib-devel
 Requires:	WindowMaker
 BuildRoot:   	/tmp/%{name}-%{version}-root
 
