@@ -1,18 +1,20 @@
---- options.c~	Sat Jul  3 20:48:35 1999
-+++ options.c	Thu Jul  8 00:25:40 1999
-@@ -25,7 +25,7 @@
- 	/* If the options file doesn't exist... */
- 	if (f==NULL) {
- 		/* Fill in some default values */
--		strcpy(options->globalInstallPath,"/usr/local/share/WindowMaker/");
-+		strcpy(options->globalInstallPath,"/usr/X11R6/share/WindowMaker/");
- 		strcpy(options->userInstallPath,homeDir);
- 		strcat(options->userInstallPath,"/GNUstep/Library/WindowMaker/");
- 		options->installType=USER_INSTALL;
-@@ -116,4 +116,4 @@
- 		count++;
+--- options.c~	Sun Sep 12 23:00:29 1999
++++ options.c	Mon Sep 13 10:56:30 1999
+@@ -163,8 +163,8 @@
+ 	
+ 	if (stat("/usr/local/share/WindowMaker/",&pathStat)==0) {
+ 		strcpy(path,"/usr/local/share/WindowMaker/");
+-	} else if (stat("/usr/share/WindowMaker/",&pathStat)==0) {
+-		strcpy(path,"/usr/share/WindowMaker/");
++	} else if (stat("/usr/X11R6/share/WindowMaker/",&pathStat)==0) {
++		strcpy(path,"/usr/X11R6/share/WindowMaker/");
+ 	} else if (stat(path,&pathStat)!=0) path[0]=0;
+ 	if (path[0]==0) return;
+ 	strcpy(pathTemp,path);
+@@ -181,4 +181,4 @@
+ 	if (path[length-1]!='/') {
+ 		strcat(path,"/");
  	}
- 	value[valueCount]='\0';
 -}
 \ No newline at end of file
 +}
