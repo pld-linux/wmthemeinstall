@@ -14,6 +14,7 @@ URL:		http://hellblazer.dhis.org/projects/
 BuildRequires:	XFree86-devel
 BuildRequires:	gtk+-devel
 BuildRequires:	glib-devel
+BuildRequires:	zlib-devel
 Requires:	WindowMaker
 BuildRoot:   	/tmp/%{name}-%{version}-root
 
