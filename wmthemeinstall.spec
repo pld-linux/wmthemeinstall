@@ -34,7 +34,7 @@ zarówno dla ca³ego systemu jak i dla pojedyñczego u¿ytkownika.
 
 %build
 %configure 
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
