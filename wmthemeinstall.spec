@@ -16,10 +16,9 @@ BuildRequires:	gtk+-devel
 BuildRequires:	glib-devel
 BuildRequires:	zlib-devel
 Requires:	WindowMaker
-BuildRoot:   	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define 	_prefix 	/usr/X11R6
-%define		_applnkdir	%{_datadir}/applnk
 
 %description
 Window Maker Theme Install is a quick little WindowMaker theme
