@@ -39,11 +39,11 @@ make
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/etc/X11/applnk/Utilities
+install -d $RPM_BUILD_ROOT/usr/X11R6/share/applnk/Utilities
 
 make install-strip DESTDIR=$RPM_BUILD_ROOT
 
-install %{SOURCE1} $RPM_BUILD_ROOT/etc/X11/applnk/Utilities
+install %{SOURCE1} $RPM_BUILD_ROOT/usr/X11R6/share/applnk/Utilities
 
 gzip -9nf README ChangeLog AUTHORS NEWS
 
@@ -54,4 +54,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc {README,ChangeLog,AUTHORS,NEWS}.gz
 %attr(755,root,root) %{_bindir}/wmthemeinstall
-/etc/X11/applnk/Utilities/wmthemeinstall.desktop
+/usr/X11R6/share/applnk/Utilities/wmthemeinstall.desktop
