@@ -6,6 +6,7 @@ Release:	3
 License:	GPL
 Group:		X11/Window Managers/Tools
 Source0:	http://hellblazer.dhis.org/projects/download/%{name}-%{version}.tar.gz
+# Source0-md5:	6af50990ac02973bd09d3cb0e06a74ff
 Source1:	%{name}.desktop
 Patch0:		%{name}-options.patch
 URL:		http://hellblazer.dhis.org/projects/
