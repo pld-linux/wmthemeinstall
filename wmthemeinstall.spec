@@ -1,0 +1,62 @@
+Summary:	Window Maker theme installation program
+Summary(pl):	Program do instalacji tematów dla Window Makera
+Name:		wmthemeinstall
+Version:	0.21
+Release:	1
+Group:		X11/Window Managers/Tools
+Group(pl):	X11/Zarz±dcy Okien/Narzêdzia
+Copyright:	GPL
+Source0:	http://hellblazer.dhis.org/projects/download/%{name}-%{version}.tar.gz
+Source1:	wmthemeinstall.desktop
+Patch:		wmthemeinstall-options.patch
+URL:		http://hellblazer.dhis.org/projects/
+BuildPrereq:	XFree86-devel
+BuildPrereq:	gtk+-devel
+BuildPrereq:	glib-devel
+Requires:	WindowMaker
+BuildRoot:   	/tmp/%{name}-%{version}-root
+
+%define _prefix /usr/X11R6
+
+%description
+Window Maker Theme Install is a quick little WindowMaker theme
+installation program that allows for the themes to be installed for
+the whole system or a single user easily.
+
+%description -l pl
+Window Maker Theme Install jest szybkim i ma³ym programem, s³u¿±cym do 
+instalacji tematów WindowMakera. Pozwala na ³atw± instalacjê tematów 
+zarówno dla ca³ego systemu jak i dla pojedyñczego u¿ytkownika.
+
+%prep
+%setup -q
+%patch -p0
+
+%build
+%configure 
+
+make
+
+%install
+rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT/etc/X11/applnk/Utilities
+
+make install-strip DESTDIR=$RPM_BUILD_ROOT
+
+install %{SOURCE1} $RPM_BUILD_ROOT/etc/X11/applnk/Utilities
+
+gzip -9nf README ChangeLog AUTHORS NEWS
+
+%clean
+rm -rf $RPM_BUILD_ROOT
+
+%files
+%defattr(644,root,root,755)
+%doc {README,ChangeLog,AUTHORS,NEWS}.gz
+%attr(755,root,root) %{_bindir}/wmthemeinstall
+/etc/X11/applnk/Utilities/wmthemeinstall.desktop
+
+%changelog
+* Thu Jul 8 1999 Piotr Czerwiñski <pius@pld.org.pl> 
+  [0.21-1]
+- initial rpm release for PLD use.
