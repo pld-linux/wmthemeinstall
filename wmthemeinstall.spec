@@ -17,7 +17,6 @@ BuildRequires:	zlib-devel
 Requires:	WindowMaker
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define 	_prefix 	/usr/X11R6
 
 %description
 Window Maker Theme Install is a quick little WindowMaker theme
