@@ -16,7 +16,7 @@ BuildRequires:	glib-devel
 Requires:	WindowMaker
 BuildRoot:   	/tmp/%{name}-%{version}-root
 
-%define _prefix /usr/X11R6
+%define 	_prefix 	/usr/X11R6
 
 %description
 Window Maker Theme Install is a quick little WindowMaker theme
