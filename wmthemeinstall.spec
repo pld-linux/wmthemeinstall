@@ -36,7 +36,7 @@ zarówno dla ca³ego systemu jak i dla pojedyñczego u¿ytkownika.
 rm -f missing
 aclocal
 autoconf
-automake -a -c
+automake -a -c -f
 %configure
 %{__make}
 
