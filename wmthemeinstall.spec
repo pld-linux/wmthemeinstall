@@ -3,18 +3,18 @@ Summary(pl):	Program do instalacji tematów dla Window Makera
 Name:		wmthemeinstall
 Version:	0.62
 Release:	3
+License:	GPL
 Group:		X11/Window Managers/Tools
 Group(de):	X11/Fenstermanager/Werkzeuge
 Group(pl):	X11/Zarz±dcy Okien/Narzêdzia
-License:	GPL
 Source0:	http://hellblazer.dhis.org/projects/download/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 Patch0:		%{name}-options.patch
 URL:		http://hellblazer.dhis.org/projects/
-BuildRequires:	gtk+-devel
-BuildRequires:	zlib-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	gtk+-devel
+BuildRequires:	zlib-devel
 Requires:	WindowMaker
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
