@@ -47,13 +47,12 @@ install -d $RPM_BUILD_ROOT%{_applnkdir}/Settings/WindowMaker
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Settings/WindowMaker
 
-gzip -9nf README ChangeLog AUTHORS NEWS
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc README ChangeLog AUTHORS NEWS
 %attr(755,root,root) %{_bindir}/wmthemeinstall
 %{_applnkdir}/Settings/WindowMaker/wmthemeinstall.desktop
