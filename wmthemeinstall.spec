@@ -5,8 +5,6 @@ Version:	0.62
 Release:	3
 License:	GPL
 Group:		X11/Window Managers/Tools
-Group(de):	X11/Fenstermanager/Werkzeuge
-Group(pl):	X11/Zarz±dcy Okien/Narzêdzia
 Source0:	http://hellblazer.dhis.org/projects/download/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 Patch0:		%{name}-options.patch
