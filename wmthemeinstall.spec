@@ -1,7 +1,7 @@
 Summary:	Window Maker theme installation program
 Summary(pl):	Program do instalacji tematów dla Window Makera
 Name:		wmthemeinstall
-Version:	0.6
+Version:	0.62
 Release:	1
 Serial:		1
 Group:		X11/Window Managers/Tools
