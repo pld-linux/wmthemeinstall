@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=WM Theme Installer
-Name[pl]=Instalator Tematów
+Name[pl]=Instalator tematów WM
 Comment=WindowMaker theme installation program
 Comment[pl]=Program instalacyjny tematów WindowMakera
 Exec=wmthemeinstall
