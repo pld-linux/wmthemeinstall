@@ -40,7 +40,7 @@ make
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_applnkdir}/Utilities
 
-make install-strip DESTDIR=$RPM_BUILD_ROOT
+%{__make} install-strip DESTDIR=$RPM_BUILD_ROOT
 install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Utilities
 
 gzip -9nf README ChangeLog AUTHORS NEWS
