@@ -11,10 +11,3 @@
  	} else if (stat(path,&pathStat)!=0) path[0]=0;
  	if (path[0]==0) return;
  	strcpy(pathTemp,path);
-@@ -181,4 +181,4 @@
- 	if (path[length-1]!='/') {
- 		strcat(path,"/");
- 	}
--}
-\ No newline at end of file
-+}
