@@ -2,11 +2,10 @@ Summary:	Window Maker theme installation program
 Summary(pl):	Program do instalacji tematów dla Window Makera
 Name:		wmthemeinstall
 Version:	0.62
-Release:	1
-Serial:		1
+Release:	2
 Group:		X11/Window Managers/Tools
 Group(pl):	X11/Zarz±dcy Okien/Narzêdzia
-Copyright:	GPL
+License:	GPL
 Source0:	http://hellblazer.dhis.org/projects/download/%{name}-%{version}.tar.gz
 Source1:	wmthemeinstall.desktop
 Patch:		wmthemeinstall-options.patch
@@ -33,6 +32,10 @@ zarówno dla ca³ego systemu jak i dla pojedyñczego u¿ytkownika.
 %patch -p0
 
 %build
+rm -f missing
+aclocal
+autoconf
+automake -a -c
 %configure 
 %{__make}
 
