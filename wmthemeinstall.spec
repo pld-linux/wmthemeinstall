@@ -55,8 +55,3 @@ rm -rf $RPM_BUILD_ROOT
 %doc {README,ChangeLog,AUTHORS,NEWS}.gz
 %attr(755,root,root) %{_bindir}/wmthemeinstall
 /etc/X11/applnk/Utilities/wmthemeinstall.desktop
-
-%changelog
-* Thu Jul 8 1999 Piotr Czerwiñski <pius@pld.org.pl> 
-  [0.21-1]
-- initial rpm release for PLD use.
