@@ -37,7 +37,7 @@ rm -f missing
 aclocal
 autoconf
 automake -a -c
-%configure 
+%configure
 %{__make}
 
 %install
