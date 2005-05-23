@@ -42,10 +42,12 @@ rm -f missing
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_applnkdir}/Settings/WindowMaker
+install -d $RPM_BUILD_ROOT%{_desktopdir}/docklets
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
-install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Settings/WindowMaker
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
+
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}/docklets
 
 
 %clean
@@ -55,4 +57,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README ChangeLog AUTHORS NEWS
 %attr(755,root,root) %{_bindir}/wmthemeinstall
-%{_applnkdir}/Settings/WindowMaker/wmthemeinstall.desktop
+%{_desktopdir}/docklets/%{name}.desktop
