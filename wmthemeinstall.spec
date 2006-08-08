@@ -30,7 +30,7 @@ zarówno dla ca³ego systemu jak i dla pojedynczego u¿ytkownika.
 
 %prep
 %setup -q
-%patch -p0
+%patch0 -p0
 
 %build
 rm -f missing
