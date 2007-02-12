@@ -1,5 +1,5 @@
 Summary:	Window Maker theme installation program
-Summary(pl.UTF-8):   Program do instalacji motywów dla Window Makera
+Summary(pl.UTF-8):	Program do instalacji motywów dla Window Makera
 Name:		wmthemeinstall
 Version:	0.62
 Release:	3
