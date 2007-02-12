@@ -1,5 +1,5 @@
 Summary:	Window Maker theme installation program
-Summary(pl):	Program do instalacji motywów dla Window Makera
+Summary(pl.UTF-8):   Program do instalacji motywÃ³w dla Window Makera
 Name:		wmthemeinstall
 Version:	0.62
 Release:	3
@@ -23,10 +23,10 @@ Window Maker Theme Install is a quick little WindowMaker theme
 installation program that allows for the themes to be installed for
 the whole system or a single user easily.
 
-%description -l pl
-Window Maker Theme Install jest szybkim i ma³ym programem, s³u¿±cym do
-instalacji motywów WindowMakera. Pozwala na ³atw± instalacjê motywów
-zarówno dla ca³ego systemu jak i dla pojedynczego u¿ytkownika.
+%description -l pl.UTF-8
+Window Maker Theme Install jest szybkim i maÅ‚ym programem, sÅ‚uÅ¼Ä…cym do
+instalacji motywÃ³w WindowMakera. Pozwala na Å‚atwÄ… instalacjÄ™ motywÃ³w
+zarÃ³wno dla caÅ‚ego systemu jak i dla pojedynczego uÅ¼ytkownika.
 
 %prep
 %setup -q
