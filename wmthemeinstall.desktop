@@ -6,5 +6,4 @@ Comment[pl]=Program instalacyjny motywów WindowMakera
 Exec=wmthemeinstall
 Terminal=false
 Type=Application
-Encoding=UTF-8
 # vi: encoding=utf-8
